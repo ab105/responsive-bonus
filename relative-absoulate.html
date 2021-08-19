@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    .box{
+
+    <style>
+        body{
+            border: 2px solid green;
+        }
+        .container{
+            border: 5px dashed palevioletred;
+            position: relative;
+            /* container er modde position relative disi cause contaier ta holo box-2 er parent...box-2 er position absoulate dewar jonno er parent(container)  er position relative diyesi*/
+        }
+        .box{
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+        }
+        #box-1{
+            background-color: cornflowerblue;
+        }
+        #box-2{
+            background-color: blue;       
+            /* position: relative; */
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+        #box-3{
+            background-color: purple;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Explore relative and absoulate one more time</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, consequuntur blanditiis ut sunt iure neque distinctio nulla eaque nemo earum nobis minima commodi! Consequatur asperiores, officiis tenetur nisi nesciunt corporis.</p>
+    <div class="container">
+        <div class="box" id="box-1">BOX-1</div>
+        <div class="box" id="box-2">BOX-2</div>
+        <div class="box" id="box-3">BOX-3</div>
+    </div>
+</body>
+</html>
